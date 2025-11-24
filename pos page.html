@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbaord</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="left-section">
+            <img src="/assets/logo..jpg" alt="Logo">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="right-section">
+            <button class="Dashbaord-btn"><a href="/components/Dashbaord.html">Dashbaord</a></button>
+            <i class="fa-regular fa-bell"></i>
+            <img src="profile.jpg" alt="Profile" class="profile">
+        </div>
+    </header>
+    <!-- main -->
+    <div class="container">
+        <!-- LEFT SIDE -->
+        <div class="left-panel">
+
+            <input type="text" class="search-input" placeholder="Search...">
+
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>Products</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hot Latte </td>
+                        <td>$128.00</td>
+                        <td>1</td>
+                        <td>$128.00</td>
+                    </tr>
+                    <tr>
+                        <td>Green Tea</td>
+                        <td>$5.00</td>
+                        <td>2</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Ice Capucino</td>
+                        <td>$23.00</td>
+                        <td>1</td>
+                        <td>$23.00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="total-bar">
+                Total Payable: $161.00
+            </div>
+
+            <div class="inputs-row">
+                <div>
+                    <label>Tax</label>
+                    <input type="number" value="2"> %
+                </div>
+                <div>
+                    <label>Discount</label>
+                    <input type="number" value="2"> $
+                </div>
+                <div>
+                    <label>Shipping</label>
+                    <input type="number" value="4"> $
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="reset">Reset</button>
+                <button class="paynow">Pay Now</button>
+                <button class="draft">Draft</button>
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="right-panel">
+            <div class="right-page-panel">
+
+                <!-- Hidden checkbox toggle -->
+                <input type="checkbox" id="rightside-page-toggle" />
+
+                <!-- Button to open the rightside panel -->
+                <label for="rightside-page-toggle" class="rightside-page-open-btn">List of Category</label>
+
+                <!-- Overlay -->
+                <label for="rightside-page-toggle" id="rightside-page-overlay"></label>
+
+                <!-- Slide-in right side panel -->
+                <div class="rightside-page-panel">
+                    <div class="rightside-page-panel-header">
+                        <h2>List Category</h2>
+                        <label for="rightside-page-toggle" class="rightside-page-close-btn">&times;</label>
+                    </div>
+
+                    <div class="rightside-page-category-container">
+                        <div class="rightside-page-category-card">
+                            <img src="https://cdn-icons-png.flaticon.com/512/857/857681.png" alt="All Category" />
+                            <p>All Category</p>
+                        </div>
+
+                        <div class="rightside-page-category-card">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Fast Foods" />
+                            <p>Fast Foods</p>
+                        </div>
+
+                        <div class="rightside-page-category-card">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2738/2738730.png" alt="Hard Drink" />
+                            <p>Hard Drink</p>
+                        </div>
+
+                        <div class="rightside-page-category-card">
+                            <img src="" alt="Soft Drink" />
+                            <p>Soft Drink</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <input class="search-product" placeholder="Scan/Search Product by Code or Name">
+
+            <div class="product-grid">
+
+                <div class="item">
+                    <img src="/assets/ice..latte.jpg">
+                    <p class="name">Ice Latte</p>
+                    <p class="price">$1.25</p>
+                </div>
+
+                <div class="item">
+                    <img src="/assets/capucino.jpg">
+                    <p class="name">Hot cappucino</p>
+                    <p class="price">$1.00</p>
+                </div>
+
+                <div class="item">
+                    <img src="/assets/hot coffe.jpg">
+                    <p class="name">Hot latte</p>
+                    <p class="price">$1.25</p>
+                </div>
+
+                <div class="item">
+                    <img src="/assets/green tea.jpg">
+                    <p class="name">Green Tea</p>
+                    <p class="price">$1.00</p>
+                </div>
+
+                <div class="item">
+                    <img src="/assets/matcha.jpg">
+                    <p class="name">Matcha latte</p>
+                    <p class="price">$2.00</p>
+                </div>
+
+                <div class="item">
+                    <img src="/assets/hot amricano.jpg">
+                    <p class="name">Hot coffe</p>
+                    <p class="price">$1.00</p>
+                </div>
+
+            </div>
+            <div class="pagination">
+                <button>&lt;</button>
+                <button class="active">1</button>
+                <button>2</button>
+                <button>&gt;</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

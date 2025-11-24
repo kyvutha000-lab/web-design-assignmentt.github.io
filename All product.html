@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashbaord</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <!-- side bar -->
+  <div class="sidebar">
+    <a href="#"><i class="fas fa-tachometer-alt icon-size"></i>Dashboard</a>
+    <hr>
+    <!-- PRODUCT MENU -->
+<label class="product-label">
+  <a href="#"><i class="fas fa-utensils icon-size"></i> Product</a>
+  
+  <!-- Hidden checkbox to toggle submenu -->
+  <input type="checkbox" id="product-toggle">
+
+  <!-- Submenu -->
+  <div class="submenu">
+    <a href="/components/create product page.html"><i class="fa-solid fa-square-plus"></i> Create Product</a>
+    <a href="/components/All product.html"><i class="fa-regular fa-clipboard"></i> All Product</a>
+    <a href="/components/category page.html"><i class="fa-solid fa-table-cells-large"></i> Category</a>
+  </div>
+</label>
+<hr>
+
+    <hr>
+    <a href="#"><i class="fas fa-users icon-size "></i> People</a>
+    <hr>
+    <a href="#"><i class="fas fa-chart-line icon-size"></i> Reports</a>
+    <hr>
+    <a href="#"><i class="fas fa-cog icon-size"></i> Settings</a>
+    <hr>
+  </div>
+  <div class="main-content">
+    <!-- header -->
+    <header>
+      <div class="left-section">
+        <img src="/assets/logo..jpg" alt="Logo">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="right-section">
+        <button class="pos-btn"><a href="/components/pos page.html">POS</a></button>
+        <i class="fa-regular fa-bell"></i>
+        <img src="profile.jpg" alt="Profile" class="profile">
+      </div>
+    </header>
+    
+  <div class="all-product-dashboard-container">
+    <main class="all-product-main-content">
+      <section class="all-product-product-list-section">
+
+        <h2 class="all-product-section-title">All Products</h2>
+        <hr class="all-product-hr">
+
+        <div class="all-product-actions-bar">
+          <div class="all-product-search-box">
+            <span class="all-product-search-icon">🔍</span>
+            <input type="text" placeholder="Search this table" class="all-product-search-input" />
+          </div>
+
+          <div class="all-product-buttons-group">
+            <button class="all-product-btn-filter">Filter</button>
+            <button class="all-product-btn-pdf">PDF</button>
+            <button class="all-product-btn-excel">EXCEL</button>
+            <button class="all-product-btn-import">Import Customers</button>
+            <button class="all-product-btn-create">Create</button>
+          </div>
+        </div>
+
+        <table class="all-product-table">
+          <thead class="all-product-thead">
+            <tr>
+              <th class="all-product-th"><input type="checkbox" class="all-product-checkbox"></th>
+              <th class="all-product-th">Image</th>
+              <th class="all-product-th">Type</th>
+              <th class="all-product-th">Name</th>
+              <th class="all-product-th">Code</th>
+              <th class="all-product-th">Brand</th>
+              <th class="all-product-th">Category</th>
+              <th class="all-product-th">Cost</th>
+              <th class="all-product-th">Price</th>
+              <th class="all-product-th">Unit</th>
+              <th class="all-product-th">Quantity</th>
+              <th class="all-product-th">Action</th>
+            </tr>
+          </thead>
+
+          <tbody class="all-product-tbody">
+            <tr class="all-product-tr">
+              <td class="all-product-td"><input type="checkbox" class="all-product-checkbox"></td>
+              <td class="all-product-td">🥤</td>
+              <td class="all-product-td">Service</td>
+              <td class="all-product-td">Coca</td>
+              <td class="all-product-td">89678000</td>
+              <td class="all-product-td">Siem Reap</td>
+              <td class="all-product-td">Soft Drink</td>
+              <td class="all-product-td">---</td>
+              <td class="all-product-td">25.00</td>
+              <td class="all-product-td">---</td>
+              <td class="all-product-td">---</td>
+              <td class="all-product-td">⚙️ 🗑</td>
+            </tr>
+
+            <tr class="all-product-tr">
+              <td class="all-product-td"><input type="checkbox" class="all-product-checkbox"></td>
+              <td class="all-product-td">🍝</td>
+              <td class="all-product-td">Single</td>
+              <td class="all-product-td">Spaghetti</td>
+              <td class="all-product-td">123456</td>
+              <td class="all-product-td">Siem Reap</td>
+              <td class="all-product-td">Main Food</td>
+              <td class="all-product-td">100.00</td>
+              <td class="all-product-td">120.00</td>
+              <td class="all-product-td">Pack</td>
+              <td class="all-product-td">0 Pack</td>
+              <td class="all-product-td">⚙️ 🗑</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="all-product-table-footer">
+          <div class="all-product-table-footer-rows-selector">
+            Rows per page:
+            <select class="all-product-select">
+              <option class="all-product-option">10</option>
+              <option class="all-product-option">20</option>
+              <option class="all-product-option">50</option>
+            </select>
+          </div>
+
+          <div class="all-product-table-footer-pagination">
+            1–2 of 2
+            <span class="all-product-pagination-controls">prev next</span>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+    <footer>
+      Assignment Restaurant Manager
+      <p>&copy; 2025 Developed by group1. All rights reserved - v1.0</p>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbaord</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- side bar -->
+    <!-- side bar -->
+    <div class="sidebar">
+        <a href="#"><i class="fas fa-tachometer-alt icon-size"></i>Dashboard</a>
+        <hr>
+        <!-- PRODUCT MENU -->
+        <label class="product-label">
+            <a href="#"><i class="fas fa-utensils icon-size"></i> Product</a>
+
+            <!-- Hidden checkbox to toggle submenu -->
+            <input type="checkbox" id="product-toggle">
+
+            <!-- Submenu -->
+            <div class="submenu">
+                <a href="/components/create product page.html"><i class="fa-solid fa-square-plus"></i> Create
+                    Product</a>
+                <a href="/components/All product.html"><i class="fa-regular fa-clipboard"></i> All Product</a>
+                <a href="/components/category page.html"><i class="fa-solid fa-table-cells-large"></i> Category</a>
+            </div>
+        </label>
+        <hr>
+
+        <hr>
+        <a href="#"><i class="fas fa-users icon-size "></i> People</a>
+        <hr>
+        <a href="#"><i class="fas fa-chart-line icon-size"></i> Reports</a>
+        <hr>
+        <a href="#"><i class="fas fa-cog icon-size"></i> Settings</a>
+        <hr>
+    </div>
+
+    <div class="main-content">
+        <!-- header -->
+        <header>
+            <div class="left-section">
+                <img src="/assets/logo..jpg" alt="Logo">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="right-section">
+                <button class="pos-btn"><a href="/components/pos page.html">POS</a></button>
+                <i class="fa-regular fa-bell"></i>
+                <img src="profile.jpg" alt="Profile" class="profile">
+            </div>
+        </header>
+        <!-- main -->
+        <div class="cotegor">
+            <section class="category-list-section">
+                <h2>Category</h2>
+                <hr>
+                <br>
+                <div class="actions-bar">
+                    <div class="search-box">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" id="categorySearch" placeholder="Search this table">
+                    </div>
+                    <br>
+                    <button class="btn-create">
+                        <span style="margin-right: 5px;">➕</span> Create
+                    </button>
+                </div>
+                <br>
+
+                <table class="category-table" id="categoryTable">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>Category Code <span>↕️</span></th>
+                            <th>Category Name <span>↕️</span></th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>C00005</td>
+                            <td>Main Food</td>
+                            <td>📝❌</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>C00004</td>
+                            <td>Fast Food</td>
+                            <td>📝❌</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>C00003</td>
+                            <td>Tea</td>
+                            <td>📝❌</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>C00002</td>
+                            <td>Latte</td>
+                            <td>📝❌</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>C00001</td>
+                            <td>Soft Drink</td>
+                            <td>📝❌</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="table-footer">
+                    <div class="rows-per-page-controls">
+                        <label for="rowsPerPage">Rows per page:</label>
+                        <select id="rowsPerPage">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                        </select>
+                    </div>
+
+                    <div class="pagination-info">
+                        1-5 of 5 <span class="prev-next">prev next</span>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <footer>
+            Assignment Restaurant Manager
+            <p>&copy; 2025 Developed by group1. All rights reserved - v1.0</p>
+        </footer>
+    </div>
+</body>
+
+</html>
